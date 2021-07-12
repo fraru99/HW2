@@ -1,0 +1,352 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+header {
+	display: flex;
+	background-image: url(../foto/foto_continenti/viaggiare-in-africa.jpg);
+	background-size: cover;
+	background-position: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 65%;
+}
+
+body {
+	margin: 0;
+}
+
+.overlay {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.shadow-box {
+	box-sizing: 1px;
+	border: solid rgba(222, 184, 135, 0.363);
+	border-radius: 10px;
+	-webkit-box-shadow: 23px 19px 15px 5px rgb(222, 184, 135, 0.66);
+	-moz-box-shadow: 23px 19px 15px 5px rgb(222, 184, 135, 0.66);
+	box-shadow: 23px 19px 15px 5px rgba(222, 184, 135, 0.66);
+}
+
+.hidden {
+	display: none !important;
+}
+
+.secret {
+	display: none;
+}
+
+.button {
+	border: 2px solid white;
+	border-radius: 100px;
+	background-color: burlywood;
+	width: 40px;
+	padding: 10px;
+	color: white;
+}
+
+header h1 {
+	text-align: center;
+	color: white;
+	top: 15%;
+	position: relative;
+	text-decoration: none;
+}
+
+header em {
+	font-size: 1.7em;
+	font-weight: normal;
+}
+
+header p {
+	font-size: 0.7em;
+}
+
+/*-----------------------------------------------------------------*/
+
+.center {
+	position: absolute;
+	top: 120%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.popup {
+	width: 350px;
+	height: 280px;
+	padding: 30px 20px;
+	background-color: white;
+	border-radius: 10px;
+	border: solid black;
+	box-sizing: border-box;
+	z-index: 2;
+	text-align: center;
+	display: none;
+}
+
+.popup img {
+	width: 50px;
+	height: 50px;
+}
+
+.popup .title {
+	margin: 5px 0px;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.popup .description {
+	color: black;
+	font-size: 15px;
+	padding: 5px;
+}
+
+.popup .close {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 15px;
+}
+
+.popup #closebtn {
+	font-size: 20px;
+	text-decoration: none;
+	cursor: pointer;
+	margin: 0px;
+}
+
+/*-----------------------------------------------------------------*/
+
+header nav {
+	position: absolute;
+	display: flex;
+	background-color: burlywood;
+	padding: 15px;
+	align-items: center;
+	justify-content: space-around;
+	top: 0;
+	left: 0;
+	right: 0;
+	font-size: 20px;
+}
+
+#links a {
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	text-decoration: none;
+}
+
+#links a:hover {
+	color: rgb(0, 0, 0);
+}
+
+#logo {
+	font-size: 1.7em;
+	color: white;
+}
+
+#barra-ricerca {
+	background-color: rgba(255, 255, 255, 0.438);
+	border-radius: 10px;
+}
+
+#pacchetti {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 200px;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+
+#pacchetti div {
+	width: 25%;
+	margin-right: 50px;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.descrizione {
+	font-size: 1.1em;
+	padding: 5px;
+	font-family: 'Baskervville', sans-serif;
+}
+
+.icone {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+	margin-right: 0%;
+	width: auto;
+}
+
+.prezzo {
+	font-size: 1.2em;
+}
+
+.carrello {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.carrello_nav {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.carrello_nav:hover,
+.carrello:hover {
+	transform: scale(1.2);
+}
+
+h1 {
+	text-decoration: underline;
+}
+
+h4 {
+	margin-top: 0;
+}
+
+footer {
+	position: relative;
+	display: flex;
+	background-color: rgb(222, 184, 135);
+	text-align: center;
+	left: 0;
+	right: 0;
+	bottom: -28%;
+	font-size: 15px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer address {
+	font-size: 2em;
+	margin-left: 30%;
+}
+
+footer p {
+	font-size: 1.7em;
+	margin-right: 30%;
+}
+
+#mainbox,
+.sidemenu,
+.closebtn {
+	display: none;
+}
+
+.close a {
+	text-decoration: none;
+	color: black;
+}
+
+.close a:hover {
+	color: burlywood;
+}
+
+#closebtn:hover {
+	transform: scale(1.7);
+}
+
+.oggetti_carrello {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.oggetti_carrello p {
+	margin: 0;
+	font-size: 1em;
+}
+
+.oggetti_carrello_mobile p {
+	display: inline;
+}
+
+@media (max-width: 500px) {
+	#mainbox {
+		display: inline;
+		font-size: 24px;
+		cursor: pointer;
+		transition: all .6s;
+		color: white;
+	}
+	.sidemenu {
+		display: inline;
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		height: 100%;
+		width: 0px;
+		background-color: #222;
+		z-index: 1;
+		padding-top: 50%;
+		overflow-x: hidden;
+		transition: all .5s;
+	}
+	.sidemenu a {
+		padding: 10px 10px 10px 45%;
+		text-decoration: none;
+		font-size: 20px;
+		color: #999;
+		display: block;
+	}
+	.sidemenu a:hover {
+		color: white;
+	}
+	.sidemenu .closebtn {
+		display: inline;
+		position: absolute;
+		top: 0px;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 32px;
+	}
+	#links {
+		display: none;
+	}
+	header h1 {
+		font-size: 1em;
+		margin-top: 15%;
+	}
+	header {
+		height: 300px;
+		line-height: 1.2;
+	}
+	header nav {
+		justify-content: space-between;
+	}
+	#logo {
+		font-size: 0.7em;
+	}
+	#pacchetti div {
+		width: 100%;
+		margin-right: 80px;
+	}
+	.secret {
+		display: inline;
+	}
+	.icone {
+		margin-top: 10px;
+	}
+	.secret2 {
+		display: none;
+	}
+	footer address {
+		font-size: 1em;
+	}
+	footer p {
+		font-size: 0.7em;
+	}
+}
